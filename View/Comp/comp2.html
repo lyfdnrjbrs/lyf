@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap4/bootstrap.min.css">
+    <script src="../../bootstrap4/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../bootstrap4/bootstrap.min.js"></script>
+    <script src="../../bootstrap4/popper.min.js"></script>
+    <link rel="stylesheet" href="../../Css/animate.min.css">
+    <!-- 自定义 -->
+    <!-- 自定义 -->
+    <link rel="stylesheet" href="../../Css/clear.css">
+    <link rel="stylesheet" href="../../Css/master.css">
+    <script src="../../Scripts/master.js"></script>
+
+    <link rel="stylesheet" href="../../Css/pro1.css">
+    <link rel="stylesheet" href="../../Css/comp2.css">
+    <script src="../../Scripts/comp2.js"></script>
+</head>
+
+<body>
+    <!--头部 sticky-top -->
+    <div class="header">
+        <!--左侧logo-->
+        <div class="left">
+            <a href="../Index.html">
+                <img src="../../Image/logo.png" title="上海卓位信息技术有限公司" alt="上海卓位信息技术有限公司">
+            </a>
+        </div>
+        <!-- 上方搜索+下载+链接+语言 -->
+        <div class="top">
+            <!--语言-->
+            <span class="language">
+                <a href="../Index.html" class="active">中文</a>
+                <span>|</span>
+                <a href="../en/Index.html">English</a>
+            </span>
+            <!--下载-->
+            <span class="downloads">
+                <a href="../downloads.html">
+                    下载
+                    <svg class="bi bi-download" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z" />
+                        <path fill-rule="evenodd"
+                            d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z" />
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z" />
+                    </svg>
+                </a>
+            </span>
+            <!--链接-->
+            <span class="links">
+                <a href="../links.html">
+                    链接
+                    <svg class="bi bi-box-arrow-up-right" width="1.1em" height="1.1em" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.5 13A1.5 1.5 0 0 0 3 14.5h8a1.5 1.5 0 0 0 1.5-1.5V9a.5.5 0 0 0-1 0v4a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 5v8zm7-11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.5H9a.5.5 0 0 1-.5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M14.354 1.646a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708l8-8a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </a>
+            </span>
+            <!--搜索-->
+            <span class="search">
+                <form action="../search.html" method="POST">
+                    <!-- 搜索图标按钮 -->
+                    <span class="input-inline">
+                        <button class="btn btn-sub" type="submit">
+                            <svg class="bi bi-search" width="0.9em" height="0.9em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                <path fill-rule="evenodd"
+                                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            </svg>
+                        </button>
+                    </span>
+                    <!-- 搜索框 -->
+                    <input type="text" name="search-name" class="text-search" placeholder="搜索网站">
+                </form>
+            </span>
+        </div>
+        <!--下方导航栏-->
+        <div class="bottom">
+            <!-- 一级菜单 -->
+            <ul class="plone-nav">
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html" class="nav-title">合作伙伴</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">合作伙伴</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ula">
+                        <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                        <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                        <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html" class="nav-title">新闻咨讯</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">新闻咨讯</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulb">
+                        <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+                    </ul>
+                </li>
+                <li class="on">
+                    <!-- 标题 -->
+                    <a href="../Comp.html" class="nav-title">公司概况</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">公司概况</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulc">
+                        <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                        <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                        <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Ser.html" class="nav-title">服务</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">服务</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul uld">
+                        <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                        <li class="bgli"><a href="../Ser/ser3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Ser/ser4.html">Optimization</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Pro.html" class="nav-title">产品</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">产品</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ule">
+                        <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                        <li class="bgli"><a href="../Pro/pro3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                        <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                        <li class="bgli"><a href="../Pro/pro6.html">Simulation Data Management</a></li>
+                        <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 隐藏导航栏1 -->
+        <div class="new-nav">
+            <!-- 一级菜单 -->
+            <ul class="plone-nav">
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Pro.html" class="nav-title">产品</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">产品</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ule">
+                        <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                        <li class="bgli"><a href="../Pro/pro3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                        <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                        <li class="bgli"><a href="../Pro/pro6.html">Simulation Data Management</a></li>
+                        <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Ser.html" class="nav-title">服务</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">服务</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul uld">
+                        <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                        <li class="bgli"><a href="../Ser/ser3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Ser/ser4.html">Optimization</a></li>
+                    </ul>
+                </li>
+                <li class="on">
+                    <!-- 标题 -->
+                    <a href="../Comp.html" class="nav-title">公司概况</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">公司概况</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulc">
+                        <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                        <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                        <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html" class="nav-title">新闻咨讯</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">新闻咨讯</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulb">
+                        <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html" class="nav-title">合作伙伴</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">合作伙伴</label>
+                    <!-- 隐藏的二级菜单  -->
+                    <ul class="showul ula">
+                        <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                        <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                        <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 隐藏导航栏2 -->
+        <div class="hide-nav">
+            <!-- 上方menu+搜索 -->
+            <form action="" method="POST">
+                <!-- menu图标 -->
+                <span class="nav-icon">
+                    <!-- 显示menu图标 -->
+                    <svg class="bi bi-square show-svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <!-- 隐藏x图标 -->
+                    <svg class="bi bi-x yc-svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                    </svg>
+                </span>
+                <!-- 搜索框 -->
+                <span class="group-one"><input type="text" class="input-search" placeholder="搜索网站"></span>
+                <!-- 搜索图标按钮 -->
+                <span class="group-two">
+                    <button type="submit">
+                        <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                        </svg>
+                    </button>
+                </span>
+            </form>
+            <!-- 下方隐藏nav一级菜单-->
+            <ul class="onenav">
+                <li>
+                    <a href="../Pro.html">产品</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Pro/pro1.html">产品1</a></li>
+                        <li><a href="../Pro/pro2.html">产品2</a></li>
+                        <li><a href="../Pro/pro3.html">产品3</a></li>
+                        <li><a href="../Pro/pro4.html">产品4</a></li>
+                        <li><a href="../Pro/pro5.html">产品5</a></li>
+                        <li><a href="../Pro/pro6.html">产品6</a></li>
+                        <li><a href="../Pro/pro7.html">产品7</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Ser.html">服务</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Ser/ser1.html">服务1</a></li>
+                        <li><a href="../Ser/ser2.html">服务2</a></li>
+                        <li><a href="../Ser/ser3.html">服务3</a></li>
+                        <li><a href="../Ser/ser4.html">服务4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Comp.html">公司</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Comp/comp1.html">公司1</a></li>
+                        <li><a href="../Comp/comp2.html">公司2</a></li>
+                        <li><a href="../Comp/comp3.html">公司3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../New.html">新闻</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../New/new1.html">新闻1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Par.html">合作</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Par/par1.html">合作1</a></li>
+                        <li><a href="../Par/par2.html">合作2</a></li>
+                        <li><a href="../Par/par3.html">合作3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容页-->
+    <div class="content">
+        <!-- 二级导航栏 -->
+        <div class="twonavbar">
+            <ul>
+                <li><a href="comp1.html">公司简介</a></li>
+                <li class="on"><a href="comp2.html">诚聘英才</a></li>
+                <li><a href="comp3.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 面包屑导航栏 -->
+        <div class="breadnavbar">
+            <nav aria-label="breadcrumb">
+                <span>您的位置：</span>
+                <ol>
+                    <li><a href="../Index.html">首页</a></li>
+                    <li><a href="../Comp.html">公司概况</a></li>
+                    <li><a href="comp2.html">诚聘英才</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- 主界面 -->
+        <div class="main">
+            <!-- 左侧介绍 -->
+            <div class="left">
+                <!-- 标题 -->
+                <h1>诚聘英才</h1>
+                <h6>上海卓位信息技术有限公司因业务发展需要，诚聘英才加入，卓位信息将提供广阔的舞台供工程师发挥自身能量，为公司和自身创造财富和机会。</h4>
+                <p>目前职位招聘机会如下：</p>
+                <!-- 介绍详细信息 -->
+                <div class="table-li">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt class="f-line">
+                                    <h1 class="job">CAE仿真分析工程师</h1>
+                                    <p class="icon">
+                                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                        </svg>
+                                    </span>
+                                </dt>
+                                <dd>
+                                    <div class="information">
+                                        <span>薪资范围：面议</span>
+                                        <span>招聘人数：1名</span>
+                                        <span>上班地址：上海</span>
+                                        <span>发布时间：2021-08-11</span>
+                                    </div>
+                                    <div class="detailed">
+                                        <div class="left">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                                                </svg>
+                                                岗位职责
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、参与智能工厂、数字孪生、智慧城市、工业仿真等领域信息化项目的解决方案咨询服务、售前技术支持、项目管理等工作；</p>
+                                                <p>2、配合销售人员，维持客户关系，收集、分析、挖掘、引导客户需求；</p>
+                                                <p>3、进行技术交流，配合完成或独立完成解决方案的设计及优化，为客户进行方案的宣贯和产品演示等相关技术支持工作；</p>
+                                                <p>4、配合销售、商务等部门，完成项目招投标工作，配合完成或独立完成投标工作中整体解决方案设计、技术标书应答、产品配置及现场述标等相关工作；</p>
+                                                <p>5、开展业务涉及，配合软件开发、实施交付、售后服务等部门，完成项目生命周期其他环节的相关管理工作。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                                </svg>
+                                                岗位要求
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、2年以上工作经验，理工科本科以上学历，熟悉整车性能开发流程、熟悉结构耐撞开发工作；</p>
+                                                <p>2、熟悉有限元假人、壁障等模型的开发、调试工作；</p>
+                                                <p>3、熟练掌握LS-DYNA,RADIOSS或PAM-CRASH碰撞分析软件；</p>
+                                                <p>4、英语读写及口语流利，有汽车，航空航天经验优先考虑。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <a href="javascript:void(0)">
+                                            <button type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                                                投 递 简 历
+                                            </button>
+                                        </a>
+                                        <span>
+                                            <svg class="bi bi-bell" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                                                <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                            </svg>
+                                            您也可以直接将简历发送至：hr@huaru.com.cn
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="f-line">
+                                    <h1 class="job">网格工程师</h1>
+                                    <p class="icon">
+                                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                        </svg>
+                                    </span>
+                                </dt>
+                                <dd>
+                                    <div class="information">
+                                        <span>薪资范围：面议</span>
+                                        <span>招聘人数：1名</span>
+                                        <span>上班地址：上海</span>
+                                        <span>发布时间：2021-08-11</span>
+                                    </div>
+                                    <div class="detailed">
+                                        <div class="left">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                                                </svg>
+                                                岗位职责
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、参与智能工厂、数字孪生、智慧城市、工业仿真等领域信息化项目的解决方案咨询服务、售前技术支持、项目管理等工作；</p>
+                                                <p>2、配合销售人员，维持客户关系，收集、分析、挖掘、引导客户需求；</p>
+                                                <p>3、进行技术交流，配合完成或独立完成解决方案的设计及优化，为客户进行方案的宣贯和产品演示等相关技术支持工作；</p>
+                                                <p>4、配合销售、商务等部门，完成项目招投标工作，配合完成或独立完成投标工作中整体解决方案设计、技术标书应答、产品配置及现场述标等相关工作；</p>
+                                                <p>5、开展业务涉及，配合软件开发、实施交付、售后服务等部门，完成项目生命周期其他环节的相关管理工作。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                                </svg>
+                                                岗位要求
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、1年以上工作经验，理工科专科以上学历，负责完成整车或子系统的有限元网格划分工作；</p>
+                                                <p>2、熟练使用Ansa或hypermesh软件；</p>
+                                                <p>3、熟悉实体跟壳单元网格划分；</p>
+                                                <p>4、有汽车，航空航天经验优先考虑。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <a href="javascript:void(0)">
+                                            <button type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                                                投 递 简 历
+                                            </button>
+                                        </a>
+                                        <span>
+                                            <svg class="bi bi-bell" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                                                <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                            </svg>
+                                            您也可以直接将简历发送至：yan.cheng@dynawe.com
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="f-line">
+                                    <h1 class="job">销售</h1>
+                                    <p class="icon">
+                                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                        </svg>
+                                    </span>
+                                </dt>
+                                <dd>
+                                    <div class="information">
+                                        <span>薪资范围：面议</span>
+                                        <span>招聘人数：2名</span>
+                                        <span>上班地址：上海</span>
+                                        <span>发布时间：2021-08-11</span>
+                                    </div>
+                                    <div class="detailed">
+                                        <div class="left">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                                                </svg>
+                                                岗位职责
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、参与智能工厂、数字孪生、智慧城市、工业仿真等领域信息化项目的解决方案咨询服务、售前技术支持、项目管理等工作；</p>
+                                                <p>2、配合销售人员，维持客户关系，收集、分析、挖掘、引导客户需求；</p>
+                                                <p>3、进行技术交流，配合完成或独立完成解决方案的设计及优化，为客户进行方案的宣贯和产品演示等相关技术支持工作；</p>
+                                                <p>4、配合销售、商务等部门，完成项目招投标工作，配合完成或独立完成投标工作中整体解决方案设计、技术标书应答、产品配置及现场述标等相关工作；</p>
+                                                <p>5、开展业务涉及，配合软件开发、实施交付、售后服务等部门，完成项目生命周期其他环节的相关管理工作。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3>
+                                                <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                                </svg>
+                                                岗位要求
+                                            </h3>
+                                            <div class="word">
+                                                <p>1、3年以上CAD/CAE软件行业销售经验，专科以上学历；</p>
+                                                <p>2、具有良好的客户沟通能力及行业客户关系，能善于倾听和挖掘客户需求，及时转化为销售机会；</p>
+                                                <p>3、同时能坦诚与客户沟通，以满足客户的利益为首要目标；</p>
+                                                <p>4、有汽车，航空航天经验优先考虑。</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <a href="javascript:void(0)">
+                                            <button type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                                                投 递 简 历
+                                            </button>
+                                        </a>
+                                        <span>
+                                            <svg class="bi bi-bell" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                                                <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                            </svg>
+                                            您也可以直接将简历发送至：yan.cheng@dynawe.com
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">招贤纳士</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#">
+                                <table border="0">
+                                    <tr>
+                                        <td>姓名：</td>
+                                        <td><input type="text" name="xm"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>邮箱：</td>
+                                        <td><input type="text" name="yx"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>手机：</td>
+                                        <td><input type="text" name="sj"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>上传简历：</td>
+                                        <td class="td-f">
+                                            <input id="file" type="file"/>
+                                            <input type="text" name="jl" class="txt-file" >
+                                            <span class="span-file">请选择文件</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn">提 交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <!--底部导航栏-->
+        <div class="nav-bar">
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Pro.html">产品</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                <li class="bgli"><a href="../Pro/pro3.html">Pre- and </a></li>
+                <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                <li class="bgli"><a href="../Pro/pro6.html">Simulation Data </a></li>
+                <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Ser.html">服务</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                <li class="bgli"><a href="../Ser/ser3.html">Pre- and </a></li>
+                <li class="bgli"><a href="../Ser/ser4.html">Pre- and </a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Comp.html">公司概况</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../New.html">新闻咨讯</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Par.html">合作伙伴</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+            </ul>
+        </div>
+        <!-- 隐藏的底部导航栏 -->
+        <div class="f-hide-nav">
+            <!-- 一级菜单 -->
+            <ul class="onenav">
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Pro.html">产品</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Pro/pro1.html">产品1</a></li>
+                        <li><a href="../Pro/pro2.html">产品2</a></li>
+                        <li><a href="../Pro/pro3.html">产品3</a></li>
+                        <li><a href="../Pro/pro4.html">产品4</a></li>
+                        <li><a href="../Pro/pro5.html">产品5</a></li>
+                        <li><a href="../Pro/pro6.html">产品6</a></li>
+                        <li><a href="../Pro/pro7.html">产品7</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Ser.html">服务</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Ser/ser1.html">服务1</a></li>
+                        <li><a href="../Ser/ser2.html">服务2</a></li>
+                        <li><a href="../Ser/ser3.html">服务3</a></li>
+                        <li><a href="../Ser/ser4.html">服务4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Comp.html">公司</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Comp/comp1.html">公司1</a></li>
+                        <li><a href="../Comp/comp2.html">公司2</a></li>
+                        <li><a href="../Comp/comp3.html">公司3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html">新闻</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../New/new1.html">新闻1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html">合作</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Par/par1.html">合作1</a></li>
+                        <li><a href="../Par/par2.html">合作2</a></li>
+                        <li><a href="../Par/par3.html">合作3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--公司联系信息+版权信息-->
+        <div class="copy">
+            <center>
+                <p><img src="../../Image/手机站点.jpg" title="扫一扫，访问手机站" alt="扫一扫，访问手机站"></p>
+                <p>扫一扫，访问手机站</p>
+                <p>上海卓位信息技术有限公司 版权所有 <a href="https://www.ibw.cn/mianze.htm">免责声明 </a><a
+                        href="https://beian.miit.gov.cn/">沪ICP备16032147号-1</a></p>
+                <p>地址：上海市闵行区春申路1955号陇盛大厦6楼616室</p>
+                <p>电话：021-33583936 传真：021-51685850</p>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

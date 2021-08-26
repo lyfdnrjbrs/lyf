@@ -1,0 +1,80 @@
+.main {
+    display: block;
+}
+
+.main .left .map {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main .left .map .map-left {
+    width: 100%;
+    max-width: 1300px;
+    height: 620px;
+    overflow: hidden;
+}
+
+.main .left .map .map-right {
+    position: absolute;
+    width: 340px;
+    height: 620px;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+.main .left .map-right h1 {
+    font-size: 24px;
+    color: #01788c;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.main .left .map-right .line-svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main .left .map-right .line-svg svg {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.main .left .map-right .line-svg span {
+    line-height: 30px;
+}
+
+.main .left .map-right .line-svg p {
+    line-height: 25px;
+    color: gray;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+@media all and (max-width:1280px) {
+    .main .left .map .map-left {
+        width: 100%;
+        max-width: 1300px;
+        height: 920px;
+        overflow: hidden;
+        padding-top: 344px;
+    }
+    
+    .main .left .map .map-right {
+        position: absolute;
+        width: 100%;
+        height: 344px;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        background: #f0f0f0;
+    }
+
+}

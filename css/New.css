@@ -1,0 +1,78 @@
+.main {
+    display: block;
+}
+
+.main .left .paging {
+    margin: 20px 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main .left .paging ul li {
+    float: left;
+    width: 40px;
+    text-align: center;
+}
+
+.main .left .paging ul li a {
+    font-weight: bolder;
+    color: #01788c;
+    padding: 7px 3px;
+}
+
+.main .left .paging ul li.p-icon a {
+    font-size: 20px;
+}
+
+.main .left .paging ul li.p-left {
+    margin-right: 50px;
+}
+
+.main .left .paging ul li.p-right {
+    margin-left: 50px;
+}
+
+.main .left .paging ul li.p-icon:hover {
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.main .left .paging ul li.p-item:hover a {
+    color: #244e60;
+    border-bottom: 3px solid #01788c;
+}
+
+.main .left .paging ul li.on a {
+    color: #244e60;
+    border-bottom: 3px solid #01788c;
+}
+
+.main .left .newsli {
+    width: 100%;
+    height: auto;
+}
+
+.main .left .newsli ul li {
+    margin-bottom: 20px;
+}
+
+.main .left .newsli ul li p {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.main .left .newsli ul li p span {
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.main .left .newsli ul li p span a {
+    color: #01788c;
+    font-size: 14px;
+}
+
+.main .left .newsli ul li p span a:hover {
+    color: #244e60;
+}

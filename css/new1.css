@@ -1,0 +1,55 @@
+.main {
+    display: block;
+}
+.main .left .box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.main .left .box>div {
+    margin-bottom: 20px;
+}
+.main .left .box .title h5 {
+    color: #404040;
+    font-weight: bold;
+    display: flex;
+}
+
+.main .left .box .title h5::after {
+    content: "";
+    display: block;
+    width: auto;
+    margin-left: 20px;
+    height: 12px;
+    align-self: center;
+    background-color: #fff0c9;
+    flex: 1;
+}
+
+.main .left .box .newsli{
+    width: 100%;
+    height: auto;
+}
+.main .left .box .newsli ul li{
+    margin-bottom: 20px;
+}
+.main .left .box .newsli ul li p{
+    line-height: 25px;
+    font-size: 14px;
+}
+.main .left .box .newsli ul li p span{
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #404040;
+}
+.main .left .box .newsli ul li p span a{
+    color: #01788c;
+    font-size: 14px;
+}
+.main .left .box .newsli ul li p span a:hover {
+    color: #244e60;
+}

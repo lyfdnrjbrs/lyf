@@ -1,0 +1,554 @@
+/* 头部 */
+.header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: white;
+}
+
+/* 左侧logo */
+.header .left {
+    position: absolute;
+    float: left;
+    height: 100%;
+    left: 8%;
+    line-height: 150px;
+}
+
+.header .left a img {
+    max-height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* 上方搜索+下载+链接+语言 */
+.header .top {
+    position: absolute;
+    float: right;
+    right: 8%;
+    height: 50px;
+}
+
+.header .top>span {
+    float: right;
+    margin-left: 40px;
+    display: block;
+}
+
+.language,
+.downloads,
+.links {
+    line-height: 50px;
+}
+
+.search {
+    margin-top: 7px;
+}
+
+.header .top span>a:hover {
+    color: #01788c;
+}
+
+/* 语言 */
+.header .top .language span {
+    margin: 0px 5px;
+}
+
+.header .top .language .active {
+    color: #01788c;
+    font-weight: bolder;
+}
+
+/* 下载+链接的图标 */
+.header .top span a>svg {
+    margin-bottom: 4px;
+}
+
+/* 搜索 */
+.header .top .search form .input-inline {
+    position: relative;
+    top: -3px;
+    left: 220px;
+}
+
+.header .top .search form .text-search {
+    width: 220px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #01788c;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #404040;
+}
+
+/* 下方导航栏 */
+.header .bottom {
+    position: absolute;
+    height: 80px;
+    float: right;
+    right: 8%;
+    bottom: 0;
+}
+
+/* 一级菜单子项 */
+.header .bottom .plone-nav>li {
+    float: right;
+    width: auto;
+    max-width: 80px;
+    height: 80px;
+    line-height: 40px;
+    margin-left: 40px;
+    position: relative;
+}
+
+/* 一级菜单为2个字的 */
+.header .bottom .plone-nav>li.twoword {
+    max-width: 40px;
+}
+
+/* 标题 */
+.header .bottom .plone-nav>li>a {
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #01788c;
+}
+
+.plone-nav li.on>a {
+    border-bottom: 5px solid #01788c;
+}
+
+/* 隐藏的下拉图标 */
+.plone-nav>li>.showicon {
+    position: relative;
+    display: none;
+    background-color: #01788c;
+    max-width: 100%;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background-image: url(../Image/gullimet.svg);
+    background-position: center .500rem;
+    background-repeat: no-repeat;
+    background-size: 1.375rem;
+    font-size: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* 隐藏的二级菜单 */
+.plone-nav>li>.showul {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: auto;
+    padding: 20px 0px;
+    top: 100%;
+    background-color: #01788c;
+    display: none;
+}
+
+.plone-nav>li>.ula {
+    left: -220px;
+}
+
+.plone-nav>li>.ulb {
+    left: -220px;
+}
+
+/* 隐藏的二级菜单子项 */
+.plone-nav li .showul li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+}
+
+.plone-nav li .showul li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 子项鼠标悬浮 */
+.plone-nav>li>.showul>li:hover.bgli {
+    background: #244e60;
+    cursor: pointer;
+}
+
+/* 隐藏的导航栏1 */
+.header .new-nav {
+    display: none;
+    position: absolute;
+    height: 80px;
+    float: left;
+    left: 8%;
+    bottom: 0;
+}
+
+/* 一级菜单子项 */
+.header .new-nav .plone-nav>li {
+    float: left;
+    width: auto;
+    max-width: 80px;
+    height: 80px;
+    line-height: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+
+/* 一级菜单为2个字的 */
+.header .new-nav .plone-nav>li.twoword {
+    max-width: 40px;
+}
+
+/* 标题 */
+.header .new-nav .plone-nav>li>a {
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #01788c;
+}
+
+/* 隐藏的导航栏2 */
+.hide-nav {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #01788c;
+}
+
+/* 上方menu+搜索 */
+.hide-nav form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* menu图标 */
+.hide-nav form .nav-icon {
+    width: 80px;
+    min-width: 80px;
+    height: 50px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+/* 图标 */
+.hide-nav form .nav-icon svg {
+    width: 40px;
+    height: 35px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* x图标 */
+.hide-nav form .nav-icon .yc-svg {
+    position: absolute;
+    top: 9.4px;
+    left: 20px;
+    display: none;
+}
+
+/* 搜索框 */
+.hide-nav form .group-one {
+    width: 100%;
+    height: 50px;
+}
+
+.input-search {
+    width: 100%;
+    line-height: 48px;
+    padding: 0px 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #404040;
+}
+
+.input-search:focus-visible {
+    outline: 0;
+    box-shadow: 0px -1px 10px #01788c;
+}
+
+/* 搜索图标*/
+.hide-nav form .group-two {
+    width: 50px;
+    text-align: center;
+}
+
+/* 搜索图标按钮 */
+.hide-nav form .group-two button {
+    border: 0;
+    background: #01788c;
+    width: 50px;
+    height: 50px;
+}
+
+.hide-nav form .group-two button:focus {
+    outline: 0;
+}
+
+.hide-nav form .group-two button svg {
+    color: white;
+    font-size: 20px;
+}
+
+/* 下方隐藏nav一级菜单 */
+.hide-nav .onenav {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #01788c;
+    width: 100%;
+    top: 50px;
+    display: none;
+    z-index: 200;
+}
+
+/* 子项 */
+.onenav li {
+    width: 100%;
+    height: auto;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+/* 子项悬停 */
+.hide-nav .onenav>li:hover {
+    background: #244e60;
+}
+
+.onenav li a {
+    padding-left: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 图标 */
+.onenav>li>span {
+    position: absolute;
+    right: 20px;
+}
+
+.onenav>li>span>svg {
+    font-size: 20px;
+    color: white;
+}
+
+/* 隐藏的向上图标 */
+.hide-nav .onenav>li>span.up-svg {
+    display: none;
+}
+
+/* nav二级菜单 */
+.hide-nav .onenav>li>.twonav {
+    background-color: #01788c;
+    display: none;
+}
+
+/* nav二级菜单子项 */
+.onenav>li>.twonav li a {
+    padding-left: 70px;
+}
+
+/* nav二级菜单子项悬浮 */
+.hide-nav .onenav>li>.twonav li:hover {
+    background: #96c8d3;
+}
+
+/* 底部 */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #f0f0f0;
+    position: relative;
+}
+
+.footer a {
+    font-size: 15px;
+}
+
+/* 底部导航栏 */
+.footer .nav-bar {
+    width: 84%;
+    height: 270px;
+}
+
+/* 底部导航栏 */
+.footer .nav-bar ul {
+    width: 20%;
+    float: left;
+    padding: 40px 0px 0px 0px;
+    line-height: 25px;
+}
+
+/* 标题 */
+.footer .nav-bar ul .nav-title a {
+    color: #01788c;
+    font-weight: bold;
+}
+
+/* 标题悬浮 */
+.footer .nav-bar ul .nav-title a:hover {
+    text-decoration: underline;
+}
+
+/* 子项悬浮 */
+.footer .nav-bar ul .bgli a:hover {
+    text-decoration: underline;
+    color: #404040;
+}
+
+/* 底部隐藏导航栏 */
+.footer .f-hide-nav {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* 隐藏的底部导航栏 */
+.footer .f-hide-nav .onenav {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 0px 0px 50px 0px;
+}
+
+/* 一级菜单子项 */
+.footer .f-hide-nav .onenav>li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* 标题 */
+.footer .f-hide-nav .onenav li a {
+    color: #01788c;
+}
+
+/* 图标 */
+.footer .f-hide-nav .onenav>li>span>svg {
+    color: #01788c;
+}
+
+/* 隐藏的向上图标 */
+.footer .f-hide-nav .onenav>li>span.up-svg {
+    display: none;
+}
+
+/* 隐藏的二级菜单 */
+.footer .f-hide-nav .onenav>li>.twonav {
+    display: none;
+}
+
+/* 子项悬浮 */
+.footer .f-hide-nav .onenav>li>ul>li:hover {
+    background: #e0e0e0;
+}
+
+/* 公司联系信息+版权信息 */
+.footer .copy {
+    width: 100%;
+    height: 240px;
+}
+
+.footer .copy center p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.footer .copy center p img {
+    width: 100px;
+}
+
+.footer .copy center p a {
+    font-size: 14px;
+}
+
+.footer .copy center p a:hover {
+    color: #404040;
+    text-decoration: underline;
+}
+
+/* 响应式 媒体查询 */
+@media all and (max-width:1280px) {
+
+    /* 头部 */
+    .header {
+        height: 230px;
+    }
+
+    .header .left a img {
+        max-height: 80px;
+    }
+
+    .header .top .search {
+        position: absolute;
+        float: right;
+        right: 0;
+        top: 60px;
+        margin: 0;
+    }
+
+    .header .bottom {
+        display: none;
+    }
+
+    .header .new-nav {
+        display: block;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    /* 头部 */
+    .header {
+        height: 200px;
+    }
+
+    .header .left a img {
+        max-height: 70px;
+        margin-top: 20px;
+    }
+
+    .header .top>span {
+        margin-left: 30px;
+    }
+
+    .header .top .search {
+        display: none;
+    }
+
+    .hide-nav {
+        display: block;
+    }
+
+    .header .new-nav {
+        display: none;
+    }
+
+    /* 尾部 */
+    .footer .nav-bar {
+        display: none;
+    }
+
+    .footer .f-hide-nav {
+        display: block;
+    }
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    position: relative;
+}

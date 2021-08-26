@@ -1,0 +1,214 @@
+/* 二级导航栏 */
+.twonavbar {
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    background: #f0f0f0;
+    border-bottom: 10px solid #fff0c9;
+}
+
+.twonavbar ul {
+    margin: 0 8%;
+    width: 84%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.twonavbar ul li {
+    margin: 0px 30px 0px 0px;
+}
+
+.twonavbar ul li a {
+    color: #01788c;
+    font-weight: bold;
+}
+
+.twonavbar ul li a:hover {
+    color: #244e60;
+}
+
+.breadnavbar {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #ffffff;
+}
+
+.breadnavbar nav {
+    margin: 0 8%;
+    width: 84%;
+    height: 40px;
+}
+
+.breadnavbar nav span {
+    font-size: 14px;
+}
+
+.breadnavbar nav ol {
+    display: inline-block;
+    padding: 8px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.breadnavbar nav ol li+li::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #404040;
+    content: "/"
+}
+
+.breadnavbar nav ol li {
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+}
+
+.breadnavbar nav ol li a {
+    font-size: 14px;
+    color: #01788c;
+}
+
+.breadnavbar nav ol li:nth-last-child(1) a {
+    color: #404040;
+}
+
+.breadnavbar nav ol li a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin: 30px 8% 50px 8%;
+    width: 84%;
+    height: auto;
+    background: #ffffff;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(0, 1fr) 17.25rem;
+    column-gap: .625rem;
+}
+
+.main .left {
+    width: 100%;
+    height: auto;
+}
+
+.main .right {
+    width: 100%;
+    height: max-content;
+    background: #f0f0f0;
+}
+
+.main .left h1 {
+    line-height: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: #96c8d3;
+    font-weight: bold;
+}
+
+.main .left .child {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    margin: 2rem 0 0 0;
+    gap: 2.5rem 1.5625rem;
+    grid-template-columns: repeat(auto-fill, minmax(18.125rem, 1fr));
+}
+
+.main .left .child .card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.main .left .child .card a img {
+    max-height: 200px;
+}
+
+.main .left .child .card .card-body .card-title a {
+    font-size: 20px;
+    color: #01788c;
+    font-weight: bold;
+}
+
+.main .left .child .card .card-body .card-title a:hover {
+    color: #244e60;
+}
+
+.main .left .child .card .card-body .card-text {
+    font-size: 14px;
+}
+
+.main .right h2 {
+    color: #96c8d3;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 15px 15px 0px 15px;
+}
+
+.main .right .contact {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .right .contact .card {
+    border: 0;
+    background: #f0f0f0;
+}
+
+.main .right .contact .card div div img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main .right .contact .card div .card-body {
+    padding: 0px 0px 0px 10px;
+}
+
+.main .right .contact .card div .card-body .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.main .right .contact .card div .card-body p {
+    font-size: 14px;
+}
+
+@media all and (max-width:768px) {
+    .twonavbar {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .right .contact .card {
+        width: 100%;
+    }
+
+    .main .right .contact .card .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+
+    .main .right .contact .card .col-md-4 {
+        max-width: 100%;
+    }
+
+    .main .right .contact .card .col-md-8 {
+        max-width: 100%;
+    }
+}

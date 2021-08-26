@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap4/bootstrap.min.css">
+    <script src="../../bootstrap4/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../bootstrap4/bootstrap.min.js"></script>
+    <script src="../../bootstrap4/popper.min.js"></script>
+    <link rel="stylesheet" href="../../Css/animate.min.css">
+    <!-- 自定义 -->
+    <!-- 自定义 -->
+    <link rel="stylesheet" href="../../Css/clear.css">
+    <link rel="stylesheet" href="../../Css/master.css">
+    <script src="../../Scripts/master.js"></script>
+
+
+    <link rel="stylesheet" href="../../Css/pro1.css">
+    <link rel="stylesheet" href="../../Css/comp3.css">
+    <style>
+        .main {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--头部 sticky-top -->
+    <div class="header">
+        <!--左侧logo-->
+        <div class="left">
+            <a href="../Index.html">
+                <img src="../../Image/logo.png" title="上海卓位信息技术有限公司" alt="上海卓位信息技术有限公司">
+            </a>
+        </div>
+        <!-- 上方搜索+下载+链接+语言 -->
+        <div class="top">
+            <!--语言-->
+            <span class="language">
+                <a href="../Index.html" class="active">中文</a>
+                <span>|</span>
+                <a href="../en/Index.html">English</a>
+            </span>
+            <!--下载-->
+            <span class="downloads">
+                <a href="../downloads.html">
+                    下载
+                    <svg class="bi bi-download" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z" />
+                        <path fill-rule="evenodd"
+                            d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z" />
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z" />
+                    </svg>
+                </a>
+            </span>
+            <!--链接-->
+            <span class="links">
+                <a href="../links.html">
+                    链接
+                    <svg class="bi bi-box-arrow-up-right" width="1.1em" height="1.1em" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.5 13A1.5 1.5 0 0 0 3 14.5h8a1.5 1.5 0 0 0 1.5-1.5V9a.5.5 0 0 0-1 0v4a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 5v8zm7-11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.5H9a.5.5 0 0 1-.5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M14.354 1.646a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708l8-8a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </a>
+            </span>
+            <!--搜索-->
+            <span class="search">
+                <form action="../search.html" method="POST">
+                    <!-- 搜索图标按钮 -->
+                    <span class="input-inline">
+                        <button class="btn btn-sub" type="submit">
+                            <svg class="bi bi-search" width="0.9em" height="0.9em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                <path fill-rule="evenodd"
+                                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            </svg>
+                        </button>
+                    </span>
+                    <!-- 搜索框 -->
+                    <input type="text" name="search-name" class="text-search" placeholder="搜索网站">
+                </form>
+            </span>
+        </div>
+        <!--下方导航栏-->
+        <div class="bottom">
+            <!-- 一级菜单 -->
+            <ul class="plone-nav">
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html" class="nav-title">合作伙伴</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">合作伙伴</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ula">
+                        <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                        <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                        <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html" class="nav-title">新闻咨讯</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">新闻咨讯</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulb">
+                        <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+                    </ul>
+                </li>
+                <li class="on">
+                    <!-- 标题 -->
+                    <a href="../Comp.html" class="nav-title">公司概况</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">公司概况</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulc">
+                        <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                        <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                        <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Ser.html" class="nav-title">服务</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">服务</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul uld">
+                        <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                        <li class="bgli"><a href="../Ser/ser3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Ser/ser4.html">Optimization</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Pro.html" class="nav-title">产品</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">产品</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ule">
+                        <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                        <li class="bgli"><a href="../Pro/pro3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                        <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                        <li class="bgli"><a href="../Pro/pro6.html">Simulation Data Management</a></li>
+                        <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 隐藏导航栏1 -->
+        <div class="new-nav">
+            <!-- 一级菜单 -->
+            <ul class="plone-nav">
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Pro.html" class="nav-title">产品</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">产品</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ule">
+                        <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                        <li class="bgli"><a href="../Pro/pro3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                        <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                        <li class="bgli"><a href="../Pro/pro6.html">Simulation Data Management</a></li>
+                        <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+                    </ul>
+                </li>
+                <li class="twoword">
+                    <!-- 标题 -->
+                    <a href="../Ser.html" class="nav-title">服务</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">服务</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul uld">
+                        <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                        <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                        <li class="bgli"><a href="../Ser/ser3.html">Pre- and Postprocessing</a></li>
+                        <li class="bgli"><a href="../Ser/ser4.html">Optimization</a></li>
+                    </ul>
+                </li>
+                <li class="on">
+                    <!-- 标题 -->
+                    <a href="../Comp.html" class="nav-title">公司概况</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">公司概况</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulc">
+                        <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                        <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                        <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html" class="nav-title">新闻咨讯</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">新闻咨讯</label>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="showul ulb">
+                        <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html" class="nav-title">合作伙伴</a>
+                    <!-- 隐藏的下拉图标 -->
+                    <label class="showicon">合作伙伴</label>
+                    <!-- 隐藏的二级菜单  -->
+                    <ul class="showul ula">
+                        <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                        <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                        <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 隐藏导航栏2 -->
+        <div class="hide-nav">
+            <!-- 上方menu+搜索 -->
+            <form action="" method="POST">
+                <!-- menu图标 -->
+                <span class="nav-icon">
+                    <!-- 显示menu图标 -->
+                    <svg class="bi bi-square show-svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <!-- 隐藏x图标 -->
+                    <svg class="bi bi-x yc-svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                    </svg>
+                </span>
+                <!-- 搜索框 -->
+                <span class="group-one"><input type="text" class="input-search" placeholder="搜索网站"></span>
+                <!-- 搜索图标按钮 -->
+                <span class="group-two">
+                    <button type="submit">
+                        <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                        </svg>
+                    </button>
+                </span>
+            </form>
+            <!-- 下方隐藏nav一级菜单-->
+            <ul class="onenav">
+                <li>
+                    <a href="../Pro.html">产品</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Pro/pro1.html">产品1</a></li>
+                        <li><a href="../Pro/pro2.html">产品2</a></li>
+                        <li><a href="../Pro/pro3.html">产品3</a></li>
+                        <li><a href="../Pro/pro4.html">产品4</a></li>
+                        <li><a href="../Pro/pro5.html">产品5</a></li>
+                        <li><a href="../Pro/pro6.html">产品6</a></li>
+                        <li><a href="../Pro/pro7.html">产品7</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Ser.html">服务</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Ser/ser1.html">服务1</a></li>
+                        <li><a href="../Ser/ser2.html">服务2</a></li>
+                        <li><a href="../Ser/ser3.html">服务3</a></li>
+                        <li><a href="../Ser/ser4.html">服务4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Comp.html">公司</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Comp/comp1.html">公司1</a></li>
+                        <li><a href="../Comp/comp2.html">公司2</a></li>
+                        <li><a href="../Comp/comp3.html">公司3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../New.html">新闻</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../New/new1.html">新闻1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Par.html">合作</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- nav二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Par/par1.html">合作1</a></li>
+                        <li><a href="../Par/par2.html">合作2</a></li>
+                        <li><a href="../Par/par3.html">合作3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容页-->
+    <div class="content">
+        <!-- 二级导航栏 -->
+        <div class="twonavbar">
+            <ul>
+                <li><a href="comp1.html">公司简介</a></li>
+                <li><a href="comp2.html">诚聘英才</a></li>
+                <li class="on"><a href="comp3.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 面包屑导航栏 -->
+        <div class="breadnavbar">
+            <nav aria-label="breadcrumb">
+                <span>您的位置：</span>
+                <ol>
+                    <li><a href="../Index.html">首页</a></li>
+                    <li><a href="../Comp.html">公司概况</a></li>
+                    <li><a href="comp3.html">联系我们</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- 主界面 -->
+        <div class="main">
+            <!-- 左侧介绍 -->
+            <div class="left">
+                <!-- 标题 -->
+                <h1>联系我们</h1>
+                <!-- <h6>通用、隐含和明确的FEM软件LS-DYNA是最先进的非线性结构分析仿真工具之一！</h4>
+                    <p>利弗莫尔软件技术（LST）的主要开发目标是在 LS-DYNA 功能范围内提供无缝解决需要的问题</p> -->
+                <!-- 介绍详细信息 -->
+                <div class="map">
+                    <div class="map-left"> 
+                        <!--百度地图容器-->
+                        <iframe src="map.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+                    </div>
+                    <div class="map-right">
+                        <h1>上海卓位信息技术有限公司</h1>
+                        <div class="line-svg">
+                            <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+                                </path>
+                            </svg>
+                            <span>地址</span>
+                            <p>上海市闵行区春申路1955号陇盛大厦6楼616室</p>
+                        </div>
+                        <div class="line-svg">
+                            <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span>电话</span>
+                            <p>021-33583936</p>
+                        </div>
+                        <div class="line-svg">
+                            <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>邮箱</span>
+                            <p>zw@dynawe.com</p>
+                        </div>
+                        <div class="line-svg">
+                            <svg class="bi" width="1em" height="1em" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+                                </path>
+                            </svg>
+                            <span>传真</span>
+                            <p>021-51685850</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <!--底部导航栏-->
+        <div class="nav-bar">
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Pro.html">产品</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Pro/pro1.html">LS-DYNA</a></li>
+                <li class="bgli"><a href="../Pro/pro2.html">Models</a></li>
+                <li class="bgli"><a href="../Pro/pro3.html">Pre- and </a></li>
+                <li class="bgli"><a href="../Pro/pro4.html">Optimization</a></li>
+                <li class="bgli"><a href="../Pro/pro5.html">Process Chain</a></li>
+                <li class="bgli"><a href="../Pro/pro6.html">Simulation Data </a></li>
+                <li class="bgli"><a href="../Pro/pro7.html">Material Cards</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Ser.html">服务</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Ser/ser1.html">LS-DYNA</a></li>
+                <li class="bgli"><a href="../Ser/ser2.html">Models</a></li>
+                <li class="bgli"><a href="../Ser/ser3.html">Pre- and </a></li>
+                <li class="bgli"><a href="../Ser/ser4.html">Pre- and </a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Comp.html">公司概况</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Comp/comp1.html">公司简介</a></li>
+                <li class="bgli"><a href="../Comp/comp2.html">诚聘英才</a></li>
+                <li class="bgli"><a href="../Comp/comp3.html">联系我们</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../New.html">新闻咨讯</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../New/new1.html">新闻咨讯</a></li>
+            </ul>
+            <ul>
+                <!-- 标题 -->
+                <li class="nav-title"><a href="../Par.html">合作伙伴</a></li>
+                <!-- 子项 -->
+                <li class="bgli"><a href="../Par/par1.html">ANSYS</a></li>
+                <li class="bgli"><a href="../Par/par2.html">LST</a></li>
+                <li class="bgli"><a href="../Par/par3.html">CATARC</a></li>
+            </ul>
+        </div>
+        <!-- 隐藏的底部导航栏 -->
+        <div class="f-hide-nav">
+            <!-- 一级菜单 -->
+            <ul class="onenav">
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Pro.html">产品</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Pro/pro1.html">产品1</a></li>
+                        <li><a href="../Pro/pro2.html">产品2</a></li>
+                        <li><a href="../Pro/pro3.html">产品3</a></li>
+                        <li><a href="../Pro/pro4.html">产品4</a></li>
+                        <li><a href="../Pro/pro5.html">产品5</a></li>
+                        <li><a href="../Pro/pro6.html">产品6</a></li>
+                        <li><a href="../Pro/pro7.html">产品7</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Ser.html">服务</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Ser/ser1.html">服务1</a></li>
+                        <li><a href="../Ser/ser2.html">服务2</a></li>
+                        <li><a href="../Ser/ser3.html">服务3</a></li>
+                        <li><a href="../Ser/ser4.html">服务4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Comp.html">公司</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Comp/comp1.html">公司1</a></li>
+                        <li><a href="../Comp/comp2.html">公司2</a></li>
+                        <li><a href="../Comp/comp3.html">公司3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../New.html">新闻</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../New/new1.html">新闻1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 标题 -->
+                    <a href="../Par.html">合作</a>
+                    <!-- 显示的下拉图标 -->
+                    <span class="down-svg">
+                        <svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的向上图标 -->
+                    <span class="up-svg">
+                        <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                        </svg>
+                    </span>
+                    <!-- 隐藏的二级菜单 -->
+                    <ul class="twonav">
+                        <li><a href="../Par/par1.html">合作1</a></li>
+                        <li><a href="../Par/par2.html">合作2</a></li>
+                        <li><a href="../Par/par3.html">合作3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--公司联系信息+版权信息-->
+        <div class="copy">
+            <center>
+                <p><img src="../../Image/手机站点.jpg" title="扫一扫，访问手机站" alt="扫一扫，访问手机站"></p>
+                <p>扫一扫，访问手机站</p>
+                <p>上海卓位信息技术有限公司 版权所有 <a href="https://www.ibw.cn/mianze.htm">免责声明 </a><a
+                        href="https://beian.miit.gov.cn/">沪ICP备16032147号-1</a></p>
+                <p>地址：上海市闵行区春申路1955号陇盛大厦6楼616室</p>
+                <p>电话：021-33583936 传真：021-51685850</p>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap() {
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(121.430615, 31.118352), 15);
+    }
+    function setMapEvent() {
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target, window) {
+        target.addEventListener("click", function () {
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay() {
+        var markers = [
+            { content: "办公地址：上海市闵行区春申路1955号陇盛大厦6楼616室<br>电  话(Tel)：021-33583936", title: "上海卓位信息技术有限公司", imageOffset: { width: -46, height: -21 }, position: { lat: 31.118676, lng: 121.431046 } }
+        ];
+        for (var index = 0; index < markers.length; index++) {
+            var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                })
+            });
+            var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+            marker.setLabel(label);
+            addClickHandler(marker, infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl() {
+        var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>

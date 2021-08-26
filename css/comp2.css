@@ -1,0 +1,233 @@
+.main {
+    display: block;
+}
+
+.main .left .table-li {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main .left .table-li ul li {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.main .left .table-li ul li dl dt {
+    overflow: hidden;
+    padding: 20px 0;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.main .left .table-li ul li dl dt .job {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    color: #404040;
+
+}
+
+.main .left .table-li ul li dl dt .icon {
+    float: right;
+    position: relative;
+}
+
+.main .left .table-li ul li dl dt .icon svg {
+    position: absolute;
+    right: 35px;
+    font-size: 20px;
+    color: #404040;
+}
+
+.main .left .table-li ul li dl dt .icon .bi-chevron-up {
+    display: none;
+}
+
+.main .left .table-li ul li dl dd {
+    overflow: hidden;
+    padding-bottom: 60px;
+    display: none;
+}
+
+.main .left .table-li ul li dl dd .information {
+    overflow: hidden;
+    border-bottom: 1px solid #01788C;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.main .left .table-li ul li dl dd .information span {
+    float: left;
+    margin-right: 60px;
+    font-size: 14px;
+}
+
+.main .left .table-li ul li dl dd .detailed {
+    overflow: hidden;
+}
+
+.main .left .table-li ul li dl dd .detailed .left {
+    width: 48%;
+    float: left;
+}
+
+.main .left .table-li ul li dl dd .detailed div h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.main .left .table-li ul li dl dd .detailed div h3 svg {
+    font-size: 25px;
+}
+
+.main .left .table-li ul li dl dd .detailed div .word p {
+    line-height: 25px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.main .left .table-li ul li dl dd .detailed .right {
+    width: 48%;
+    float: right;
+}
+
+.main .left .table-li ul li dl dd .contact-btn {
+    padding-top: 50px;
+}
+
+.main .left .table-li ul li dl dd .contact-btn a button {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    background: #96c8d3;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main .left .table-li ul li dl dd .contact-btn span {
+    margin-left: 30px;
+}
+
+.main .left .table-li ul li dl dd .contact-btn span svg {
+    position: relative;
+    top: -3px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.main .left .table-li ul li.on {
+    background: #f6f6f6;
+    padding: 20px 35px;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.main .left .table-li ul li.on dl dd {
+    display: block;
+}
+
+.main .left .table-li ul li.on dl dt .job {
+    font-size: 30px;
+    color: #01788C;
+}
+
+.main .left .table-li ul li.on dl dt .icon .bi-chevron-up {
+    display: block;
+    right: 0px;
+    color: #01788C;
+}
+
+.main .left .table-li ul li.on dl dt .icon .bi-chevron-down {
+    display: none;
+}
+
+.modal-header {
+    width: 100%;
+}
+
+.modal-title {
+    font-size: 30px;
+}
+
+.modal-title,
+.modal-body,
+.modal-footer {
+    margin: 0;
+}
+
+.modal-body table {
+    width: 100%;
+    height: max-content;
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+
+.modal-body table tr {
+    line-height: 55px;
+}
+
+.modal-body table tr td:nth-child(1) {
+    text-align: right;
+    width: 25%;
+}
+
+.modal-body table tr td:nth-child(2) {
+    width: 75%;
+}
+
+.modal-body table tr td input {
+    width: 90%;
+    height: 35px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-footer button {
+    width: 80px;
+    background: #96c8d3;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.td-f input {
+    position: absolute;
+    max-width: 314px;
+    bottom: 55px;
+}
+
+#file {
+    z-index: 200;
+    opacity: 0;
+}
+
+.span-file {
+    position: absolute;
+    right: 60px;
+    font-size: 12px;
+    bottom: 45px;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media all and (max-width:1280px) {
+    .main .left .table-li ul li dl dd .detailed .left {
+        width: 100%;
+        clear: both;
+        padding-bottom: 10px;
+    }
+    
+    .main .left .table-li ul li dl dd .detailed .right {
+        width: 100%;
+        clear: both;
+    }
+
+}
